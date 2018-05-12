@@ -403,9 +403,58 @@ input:-moz-placeholder {
 
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 }	
-@media screen and (max-width: 1250px){
-	
+@media screen and (max-width: 1280px){
+	.header-nav .nav-list a {
+		font-size: 12px;
+	}
+	.footer-block {
+		display: block;
+	}
+	.footer-logo {
+		margin-bottom: 30px;
+	}
+	.footer-nav-list li {
+		text-align: center;
+	}
+	.footer-info p {
+		text-align: center;
+	}
+	.footer-right {
+		margin-top: 20px;
+		text-align: center;
+	}
 }
-@media screen and (max-width: 1020px){
-
+@media screen and (max-width: 768px){
+	.b-block {
+		padding: 0 10px;
+	}
+	.title {
+		font-size: 36px;
+	}
+	.header-nav {
+		display: none;
+	}
+	.header-top {
+		display: block;
+		text-align: right;
+	}
+	.header-logo {
+		display: none;
+	}
+	.header-contacts-block p {
+		display: none;
+	}
+	.header-write {
+		display: none;
+	}
+	.header-contacts-block {
+		margin-bottom: 0;
+	}
+	.header .b-block {
+		padding-bottom: 20px;
+	}
+	.header-contacts {
+		display: inline-block;
+		margin-bottom: 0;
+	}
 }

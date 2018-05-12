@@ -403,3 +403,90 @@
 }
 
 
+@media screen and (max-width: 1280px) {
+	.association-list li:nth-child(odd) {
+		margin-right: auto;
+	}
+	.association-list li {
+		display: block;
+		margin: 0 auto 30px;
+	}
+	.review-slide img {
+		margin-bottom: 20px;
+	}
+	.contacts-list {
+		display: block;
+	}
+	.contacts-list .contact-item-3 {
+		padding-left: 58px;
+	}
+	.contact-item-3::before {
+		left: 11px;
+	}
+	.contacts-list li {
+		margin-bottom: 30px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.info-list {
+		display: block;
+	}
+	.info-list li {
+		display: block;
+		margin-bottom: 40px;
+	}
+	.association-list li {
+		padding: 200px 25px 25px 25px;
+	}
+	.association-list li.item-1 img {
+		top: 25px;
+		left: calc(50% - 64px);
+	}
+	.association-list li.item-2 img {
+		top: 25px;
+		left: calc(50% - 64px);
+	}
+	.association-list li.item-3 img {
+		top: 25px;
+		left: calc(50% - 64px);
+	}
+	.association-list li.item-4 img {
+		top: 25px;
+		left: calc(50% - 64px);
+	}
+	.association-list li.item-5 img {
+		top: 25px;
+		left: calc(50% - 47px);
+	}
+	.association-list li.item-6 img {
+		top: 25px;
+		left: calc(50% - 60px);
+	}
+	.review-slide {
+		margin: 0;
+	}
+	.reviews-slider {
+		padding: 0 35px;
+	}
+	.review-slide img {
+		display: block;
+		margin: 0 auto 20px;
+		max-width: 100%;
+	}
+	.review-text {
+		max-width: 100%;
+		display: block;
+	}
+	.operators-list li {
+		display: block;
+		width: 100%;
+	}
+	.partners-list li {
+		display: block;
+		width: 100%;
+	}
+	.coordinators-list li {
+		display: block;
+		width: 100%;
+	}
+}
