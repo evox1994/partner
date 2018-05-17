@@ -1,0 +1,244 @@
+.b-1 {
+	color: #ffffff;
+}
+.b-1 .b-block {
+	padding-top: 240px;
+	padding-bottom: 140px;
+}
+
+.b-2 {
+	color: #000000;
+	background-color: #ffffff;
+}
+.b-2 .b-block {
+	padding-top: 30px;
+	padding-bottom: 70px;
+}
+.b-2-block {
+	display: flex;
+	display: -ms-flex;
+	display: -webkit-flex;
+	width: 100%;
+	align-items: top;
+	justify-content: space-between;
+}
+.b-2-left {
+	max-width: 870px;
+	width: 100%;
+}
+.news-list {
+	text-align: left;
+	margin-bottom: 20px;
+}
+.news-list li {
+	margin-bottom: 40px;
+}
+.list-image {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 270px;
+	width: 100%;
+}
+.list-image img {
+	display: block;
+	width: 100%;
+	margin-bottom: 15px;
+}
+.list-image span {
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	padding-left: 20px;
+	position: relative;
+	font-size: 14px;
+	color: rgb(127, 127, 127);
+	margin-bottom: 15px;
+	margin-right: 60px;
+}
+.list-image span:last-child {
+	margin-right: auto;
+}
+.list-image span b {
+	position: absolute;
+	display: block;
+	background-color: #ffffff;
+	border: 1px solid rgb(183, 183, 183);
+	border-radius: 50%;
+	left: 0;
+	top: calc(50% - 7px);
+	width: 14px;
+	height: 14px;
+}
+.list-image span b::before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: calc(50% - 3px);
+	top: calc(50% - 3px);
+	border-radius: 50%;
+	background-color: rgb(163, 195, 245);
+	width: 6px;
+	height: 6px;
+}
+.list-text {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 570px;
+	width: 100%;
+	margin-left: 25px;
+}
+.list-title {
+	display: block;
+	font-size: 20px;
+	font-weight: 600;
+	color: rgb(0, 60, 120);
+	margin-bottom: 15px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.list-title:hover {
+	color: rgb(97, 153, 239);
+}
+.list-text p {
+	display: block;
+	width: 100%;
+	font-size: 16px;
+	line-height: 1.2;
+}
+.more-news {
+	display: none;
+	font-size: 18px;
+	color: rgb(113, 163, 239);
+	text-decoration: underline;
+}
+.more-news.active {
+	display: inline-block;
+}
+.more-news:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+.b-2-right {
+	max-width: 270px;
+	width: 100%;
+}
+.b-2-right span {
+	display: inline-block;
+	padding-bottom: 5px;
+	position: relative;
+	margin-bottom: 15px;
+	font-weight: 600;
+	font-size: 21px;
+}
+.b-2-right span::before {
+	content: '';
+	display: block;
+	height: 2px;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	position: absolute;
+	background-color: rgb(255, 193, 113);
+}
+.main-news {
+	color: #ffffff;
+	padding: 25px 20px;
+	background-color: #71a3ef;
+	box-sizing: border-box;
+	width: 100%;
+	margin-bottom: 40px;
+}
+.main-news img {
+	display: block;
+	width: 100%;
+	margin-bottom: 25px;
+}
+.main-news p {
+	display: block;
+	width: 100%;
+	text-align: left;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.2;
+}
+.all-news {
+	padding: 0 20px;
+}
+.filter-list {
+	display: block;
+	width: 100%;
+	margin-bottom: 30px;
+}
+.filter-list li {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 18px;
+	color: #000000;
+}
+.filter-list li.active {
+	color: rgb(0, 51, 153);
+}
+.filter-list li:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.year-list {
+	display: block;
+	width: 100%;
+	margin-bottom: 30px;
+}
+.year-list li {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 18px;
+	color: #000000;
+}
+.year-list li.active {
+	color: rgb(0, 51, 153);
+}
+.year-list li:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.social-list li {
+	display: block;
+	margin-bottom: 10px;
+}
+.social-list li img {
+	display: block;
+	width: 100%;
+}
+
+
+
+
+@media screen and (max-width: 1280px) {
+	.list-text {
+		display: block;
+		margin-left: 0;
+		max-width: 90%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.b-2-block {
+		display: block;
+	}
+	.list-image {
+		display: block;
+		margin: 0 auto;
+	}
+	.list-text {
+		max-width: 100%;
+	}
+	.b-2-left {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.b-2-right {
+		margin: 0 auto;
+	}
+}

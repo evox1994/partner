@@ -1,0 +1,97 @@
+.b-1 {
+	color: #ffffff;
+}
+.b-1 .b-block {
+	padding-top: 260px;
+	padding-bottom: 140px;
+}
+
+.b-2 {
+	color: #000000;
+	background-color: #ffffff;
+}
+.b-2 .b-block {
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+.events-list li {
+	display: block;
+	text-align: left;
+	margin-bottom: 60px;
+}
+.events-list img {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 400px;
+	width: 100%;
+	margin-right: 60px;
+}
+.event-text {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 700px;
+	width: 100%;
+}
+.event-name {
+	font-weight: 600;
+	font-size: 20px;
+	color: rgb(0, 60, 120);
+	margin-bottom: 10px;
+}
+.event-name-subscribe {
+	font-weight: 600;
+	font-size: 16px;
+	color: rgb(113, 163, 239);
+	margin-bottom: 30px;
+}
+.event-text span {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	padding-left: 32px;
+	position: relative;
+	font-size: 16px;
+	color: rgb(127, 127, 127);
+	margin-bottom: 15px;
+}
+.event-text span b {
+	position: absolute;
+	display: block;
+	background-color: #ffffff;
+	border: 1px solid rgb(183, 183, 183);
+	border-radius: 50%;
+	left: 0;
+	top: calc(50% - 7px);
+	width: 14px;
+	height: 14px;
+}
+.event-text span b::before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: calc(50% - 3px);
+	top: calc(50% - 3px);
+	border-radius: 50%;
+	background-color: rgb(163, 195, 245);
+	width: 6px;
+	height: 6px;
+}
+.event-text p {
+	display: block;
+	font-size: 16px;
+	line-height: 1.2;
+	margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1280px) {
+	.events-list img {
+		display: block;
+		margin: 0 auto 30px;
+	}
+	.event-text {
+		display: block;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 768px) {
+}

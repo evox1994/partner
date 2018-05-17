@@ -1,0 +1,50 @@
+.b-1 {
+	color: #ffffff;
+}
+.b-1 .b-block {
+	padding-top: 230px;
+	padding-bottom: 80px;
+}
+
+.b-2 {
+	color: #000000;
+	background-color: #ffffff;
+}
+.b-2 .b-block {
+	padding-top: 10px;
+	padding-bottom: 40px;
+}
+.documents-list li {
+	display: block;
+	width: 100%;
+	margin-bottom: 60px;
+}
+.document-name {
+	display: block;
+	margin: 0 auto 50px;
+	width: 100%;
+	max-width: 570px;
+	padding: 30px 0;
+	box-sizing: border-box;
+	border: 3px solid rgb(109, 159, 236);
+	background-color: rgb(242, 244, 249);
+	border-radius: 3px;
+	font-size: 25px;
+	line-height: 1.2;
+	font-weight: 600;
+	color: rgb(0, 51, 153);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.document-name:hover {
+	background-color: rgb(224, 229, 243);
+}
+.documents-list p {
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	text-align: left;
+}

@@ -1,0 +1,121 @@
+.b-1 {
+	color: #ffffff;
+}
+.b-1 .b-block {
+	padding-top: 260px;
+	padding-bottom: 120px;
+}
+
+.b-2 {
+	color: #000000;
+	background-color: #ffffff;
+}
+.b-2 .b-block {
+	padding-top: 20px;
+	padding-bottom: 80px;
+}
+.vacancy-list li {
+	display: flex;
+	display: -ms-flex;
+	display: -webkit-flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 35px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgb(210, 219, 237);
+}
+.vacancy-list li:last-child {
+	border: 0;
+}
+.list-left {
+	display: block;
+	max-width: 800px;
+	width: 100%;
+	text-align: left;
+}
+.list-title {
+	display: block;
+	font-size: 20px;
+	text-align: left;
+	color: rgb(0, 60, 120);
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.list-left span {
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	padding-left: 20px;
+	position: relative;
+	font-size: 14px;
+	color: rgb(127, 127, 127);
+	margin-bottom: 15px;
+	margin-right: 60px;
+}
+.list-left span:last-child {
+	margin-right: auto;
+}
+.list-left span b {
+	position: absolute;
+	display: block;
+	border: 1px solid rgb(183, 183, 183);
+	border-radius: 50%;
+	left: 0;
+	top: calc(50% - 7px);
+	width: 14px;
+	height: 14px;
+}
+.list-left span b::before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: calc(50% - 3px);
+	top: calc(50% - 3px);
+	border-radius: 50%;
+	background-color: rgb(163, 195, 245);
+	width: 6px;
+	height: 6px;
+}
+.list-left p {
+	display: block;
+	font-size: 16px;
+	line-height: 1.2;
+}
+.list-right {
+	max-width: 270px;
+	width: 100%;
+}
+.list-right .salary {
+	margin-bottom: 25px;
+	font-size: 26px;
+	font-weight: 700;
+	color: rgb(255, 193, 113);
+}
+.list-right p {
+	color: rgb(127, 127, 127);
+	display: block;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+.list-right a {
+	display: inline-block;
+	color: #000000;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+	.vacancy-list li {
+		display: block;
+	}
+	.list-left {
+		margin-bottom: 20px;
+	}
+	.list-right {
+		margin: 0 auto;
+	}
+}

@@ -29,6 +29,16 @@ input.error,textarea.error{
 	border: 1px solid #F00 !important;
 	box-shadow: 0 0px 0px 1px #F00;
 }
+button:hover {
+	cursor: pointer;
+}
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 
 .fancybox-inner{
 	overflow: visible !important;
@@ -114,6 +124,9 @@ input.error,textarea.error{
 	margin: 0 auto 60px;
 	font-size: 26px;
 	font-weight: 400;
+}
+.title-subscribe span {
+	color: rgb(0, 51, 153);
 }
 .slick-arrow {
 	position: absolute;
