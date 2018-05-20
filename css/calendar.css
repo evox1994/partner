@@ -1,0 +1,130 @@
+.b-1 {
+	color: #ffffff;
+}
+.b-1 .b-block {
+	padding-top: 240px;
+	padding-bottom: 40px;
+}
+.calendar {
+	border-collapse: collapse;
+	width: 100%;
+	margin: 0 auto;
+	max-width: 490px;
+	background-color: #ffffff;
+}
+.calendar td {
+	width: 14.3%;
+}
+.calendar thead {
+	font-size: 18px;
+	color: rgb(0, 51, 153);
+}
+.calendar thead tr {
+	border: 1px solid rgb(0, 51, 153);
+}
+.calendar thead tr td {
+	box-sizing: border-box;
+	padding: 10px 0;
+	vertical-align: middle;
+}
+.calendar thead .cal-arr {
+	font-weight: 700;
+	font-size: 40px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.calendar thead .cal-arr:hover {
+	cursor: pointer;
+}
+.calendar tbody td {
+	padding: 25px 0;
+	color: rgb(0, 51, 153);
+	border: 1px solid rgb(0, 51, 153);
+}
+.calendar tbody td.today {
+	background-color: #fff3e3;
+}
+.calendar tbody td.date-var:hover {
+	cursor: pointer;
+}
+.calendar tbody tr:nth-child(6n) td {
+	height: 0;
+	padding: 0;
+	font-size: 0;
+	border: 0;
+}
+
+.b-2 {
+	color: #000000;
+	background-color: #ffffff;
+}
+.b-2 .b-block {
+	padding-top: 20px;
+	padding-bottom: 60px;
+}
+.events-list li {
+	display: none;
+	text-align: left;
+	border-bottom: 1px solid rgb(210, 219, 237);
+	padding-bottom: 25px;
+	margin-bottom: 40px;
+}
+.events-list li.active {
+	display: block;
+}
+.events-list li:last-child {
+	border: 0;
+}
+.event-name {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	color: rgb(0, 60, 120);
+}
+.events-list span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 20px;
+	padding-left: 30px;
+	position: relative;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin-right: 60px;
+}
+.events-list span:last-child {
+	margin-right: 0;
+}
+.events-list span img {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.event-info p {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 800px;
+	margin-right: 65px;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 1280px) {
+	.event-info {
+		text-align: center;
+	}
+	.event-info p {
+		display: block;
+		margin-right: auto;
+		text-align: left;
+	}
+}

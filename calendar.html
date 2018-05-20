@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
 	<link rel="stylesheet" href="css/slick.css" type="text/css">
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
-	<link rel="stylesheet" href="css/contests.css" type="text/css">
+	<link rel="stylesheet" href="css/calendar.css" type="text/css">
 
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
@@ -25,6 +25,8 @@
 	<script type="text/javascript" src="js/KitSend.js"></script>
 	<script type="text/javascript" src="js/slick.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/calendar.js"></script>
+
 </head>
 <body>
 
@@ -66,32 +68,46 @@
 
 	<div class="b b-1">
 		<div class="b-block">
-			<h1 class="title">Конкурсы</h1>
-			<p class="title-subscribe">Актуальные конкурсы в сфере охраны труда, где себя может проявить каждый</p>
+			<h1 class="title">Календарь мероприятий</h1>
+			<p class="title-subscribe">Найдите интересное для Вас мероприятие в области охраны труда на удобную дату, посмотрев календарь событий нашей Ассоциации</p>
+			<table id="calendar" class="calendar">
+				<thead>
+					<tr><td class="cal-arr prev-month">‹</td><td class="month-name" colspan="5"></td><td class="cal-arr next-month">›</td></tr>
+					<tr><td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><td>Вс</td></tr>
+				</thead>
+				<tbody></tbody>
+			</table>
 		</div>
 	</div>
 
 	<div class="b b-2">
 		<div class="b-block">
 			<ul class="events-list">
-				<li>
-					<img src="i/event-img.jpg">
-					<div class="event-text">
-						<div class="event-name">Успех и безопасность</div>
-						<div class="event-name-subscribe">Всероссийский конкурс на лучшую организацию работ в области условий и охраны труда</div>
-						<span><b></b>Прием заявок до 17 апреля 2018 года</span>
+				<li class="active" data-date="12 Июнь 2018">
+					<div class="event-name">Развитие цифровой технологии в области охраны труда</div>
+					<span><img src="i/time-icon.png">17.04.2018 г., 14:00</span>
+					<span><img src="i/pos-icon.png">г. Томск, ул. Красноармейская 96, оф. 505</span>
+					<div class="event-info">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-						<a href="contests-more.html" class="button button-blue">Подробнее</a>
+						<a href="#" class="button button-blue">Принять участие</a>
 					</div>
 				</li>
-				<li>
-					<img src="i/event-img.jpg">
-					<div class="event-text">
-						<div class="event-name">Успех и безопасность</div>
-						<div class="event-name-subscribe">Всероссийский конкурс на лучшую организацию работ в области условий и охраны труда</div>
-						<span><b></b>Прием заявок до 17 апреля 2018 года</span>
+				<li class="active" data-date="31 Май 2018">
+					<div class="event-name">Развитие цифровой технологии в области охраны труда</div>
+					<span><img src="i/time-icon.png">17.04.2018 г., 14:00</span>
+					<span><img src="i/pos-icon.png">г. Томск, ул. Красноармейская 96, оф. 505</span>
+					<div class="event-info">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-						<a href="contests-more.html" class="button button-blue">Подробнее</a>
+						<a href="#" class="button button-blue">Принять участие</a>
+					</div>
+				</li>
+				<li class="active" data-date="29 Май 2018">
+					<div class="event-name">Развитие цифровой технологии в области охраны труда</div>
+					<span><img src="i/time-icon.png">17.04.2018 г., 14:00</span>
+					<span><img src="i/pos-icon.png">г. Томск, ул. Красноармейская 96, оф. 505</span>
+					<div class="event-info">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+						<a href="#" class="button button-blue">Принять участие</a>
 					</div>
 				</li>
 			</ul>
