@@ -50,6 +50,10 @@
 .calendar tbody td.date-var:hover {
 	cursor: pointer;
 }
+.calendar tbody td.date-var.active {
+	background-color: rgb(0, 51, 153);
+	color: #ffffff;
+}
 .calendar tbody tr:nth-child(6n) td {
 	height: 0;
 	padding: 0;

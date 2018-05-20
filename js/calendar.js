@@ -40,15 +40,16 @@ $(document).ready(function(){
 	  Calendar2("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month)+1);
 	}
 
-	$('.date-var').on("click", function(){
+	$(document).on("click", '.date-var', function(){
 		var date_ev = $(this).text() + ' ' + $('.month-name').text();
 
 		$('.events-list li').removeClass('active');
+		$('.date-var').removeClass("active");
 		$('.events-list li').each(function(){
 			if ( $(this).data("date") == date_ev ) {
 				$(this).addClass('active');
 			}
 		});
-		alert(date_ev);
+		$(this).addClass("active");
 	});
 });
