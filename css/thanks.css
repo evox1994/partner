@@ -1,0 +1,14 @@
+.b-1 {
+	color: #ffffff;
+}
+.b-1 .b-block {
+	padding-top: 260px;
+	padding-bottom: 90px;
+	min-height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+	.b-1 .b-block {
+		padding-top: 150px;
+	}
+}

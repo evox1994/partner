@@ -373,16 +373,27 @@ input:-moz-placeholder {
 	align-items: center;
 	justify-content: space-between;
 }
+.header-nav .nav-list li {
+	position: relative;
+}
 .header-nav .nav-list a {
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 18px;
 	color: #ffffff;
+	position: relative;
+}
+.header-nav .nav-list span {
+	color: #ffffff;
+	font-size: 18px;
+}
+.header-nav .nav-list span:hover {
+	cursor: pointer;
 }
 .header-nav .nav-list a:hover {
 	text-decoration: underline;
 }
-.header-nav .nav-list li:last-child a {
+.header-nav .nav-list li.last-li a {
 	padding: 10px;
 	border-radius: 3px;
 	border: 1px solid rgb(255, 193, 113);
@@ -392,10 +403,44 @@ input:-moz-placeholder {
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
-.header-nav .nav-list li:last-child a:hover {
+.header-nav .nav-list li.last-li a:hover {
 	text-decoration: none;
 	background-color: rgb(255, 193, 113);
 }
+.header-nav .nav-list .drop-down_list {
+	text-align: left;
+	padding: 10px;
+	position: absolute;
+	box-sizing: border-box;
+	min-width: 100%;
+	display: none;
+}
+.header-nav .nav-list li.active .drop-down_list {
+	display: block;
+}
+.header.active .header-nav .nav-list .drop-down_list {
+	background-color: rgb(0, 51, 153);
+}
+.header-nav .nav-list .drop-down_list li {
+	position: relative;
+	margin-bottom: 3px;
+}
+.header-nav .nav-list .drop-down_list li a {
+	font-size: 14px;
+	padding-left: 10px;
+}
+.header-nav .nav-list .drop-down_list li a::after {
+	content: '';
+	display: block;
+	top: calc(50% - 2.5px);
+	left: 0;
+	border-radius: 50%;
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	background-color: #ffc171;
+}
+
 
 .footer {
 	color: #000000;
@@ -603,7 +648,10 @@ input:-moz-placeholder {
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 }	
 @media screen and (max-width: 1280px){
-	.header-nav .nav-list a {
+	.header-nav .nav-list a, .header-nav .nav-list span {
+		font-size: 12px;
+	}
+	.header-nav .nav-list .drop-down_list li a {
 		font-size: 12px;
 	}
 	.footer-block {
@@ -754,7 +802,10 @@ input:-moz-placeholder {
 		display: block;
 		margin-top: 10px;
 	}
-	.header-nav .nav-list a {
+	.header-nav .nav-list a, .header-nav .nav-list span {
+		font-size: 14px;
+	}
+	.header-nav .nav-list .drop-down_list li a {
 		font-size: 14px;
 	}
 	.header {
@@ -771,5 +822,9 @@ input:-moz-placeholder {
 	}
 	.header.active .header-top {
 		display: block;
+	}
+	.header-nav .nav-list .drop-down_list {
+		position: static;
+		text-align: center;
 	}
 }

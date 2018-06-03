@@ -34,6 +34,27 @@ $(document).ready(function(){
         }
     });
 
+    $('.header-nav .drop-down').mouseover(function(){
+        if ( $(window).width() > 767 ) {
+            $(this).addClass("active");
+        }
+    });
+
+    $('.header-nav .drop-down').mouseout(function(){
+        if ( $(window).width() > 767 ) {
+            $('.header-nav .drop-down').removeClass("active");
+        }
+    });
+
+    $('.header-nav .drop-down').click(function(){
+        if ( $(this).hasClass("active") ) {
+            $(this).removeClass("active");
+        } else {
+            $('.header-nav .drop-down').removeClass("active");
+            $(this).addClass("active");
+        }
+    });
+
     $(window).scroll(function(){
         var st = $(this).scrollTop();
         if ( $(window).width() > 768 ) {
